@@ -17,16 +17,16 @@ describe('createStore', function() {
     expect(candyStore).toBeA(Object)
   })
 
-  // describe('getState', function(){
-  //   it('returns the default state based on the reducer for the candyStore', function(){
-  //     expect(candyStore.getState()).toEqual([]);
-  //   })
+  describe('getState', function(){
+    it('returns the default state based on the reducer for the candyStore', function(){
+      expect(candyStore.getState()).toEqual([]);
+    })
 
-  //   it('returns the default state based on the reducer for the countStore', function(){
-  //     expect(countStore.getState()).toBeA('number')
-  //     expect(countStore.getState()).toEqual(0)
-  //   })
-  // })
+    it('returns the default state based on the reducer for the countStore', function(){
+      expect(countStore.getState()).toBeA('number')
+      expect(countStore.getState()).toEqual(0)
+    })
+  })
 
   describe('dispatch', function(){
 

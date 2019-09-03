@@ -13,6 +13,8 @@ export default function createStore(reducer) {
     return state;
   };
  
+  dispatch({ type: '@@INIT' });
+
   return {
     dispatch,
     getState
@@ -21,13 +23,12 @@ export default function createStore(reducer) {
 
 
 function render() {
-candyStore.getState();
-countStore.getState();
+  const container = document.getElementById('container');
 }
 
-let candyStore = createStore(candyReducer)
+// let candyStore = createStore(candyReducer)
 
-let countStore = createStore(countReducer)
+// let countStore = createStore(countReducer)
 
-candyStore.dispatch({ type: '@@INIT' });
-countStore.dispatch({ type: '@@INIT' });
+// candyStore.
+// countStore.dispatch({ type: '@@INIT' });
